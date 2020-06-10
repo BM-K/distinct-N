@@ -1,4 +1,5 @@
 # distinct-N
+https://github.com/neural-dialogue-metrics/Distinct-N 여기서 에러나는 부분 수정
 
 ## How to use
 ```ruby
