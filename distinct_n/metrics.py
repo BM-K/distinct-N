@@ -11,6 +11,7 @@ def distinct_n_sentence_level(sentence, n):
     :return: float, the metric value.
     """
     if len(sentence) == 0:
+        print("0으로 나눌 수 없습니다")
         return 0.0  # Prevent a zero division
     distinct_ngrams = set(ngrams(sentence, n))
     return len(distinct_ngrams) / len(sentence)

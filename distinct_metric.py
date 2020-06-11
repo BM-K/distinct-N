@@ -14,7 +14,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('hypothesis', help="predicted text file, one example per line")
     parser.add_argument('-n', dest='n_range', type=int, nargs='+', help="n to use as in distinct-N")
-    parser.add_argument('--output_dir')
     args = parser.parse_args()
     
     logging.basicConfig(level=logging.INFO)
@@ -27,7 +26,6 @@ if __name__ == '__main__':
     output_dir = Path(args.output_dir)
     for n in args.n_range:
         name=NAME
-        output=output_dir.joinpath(f'{NAME}_{n}').with_suffix('.json')
         params={'n': n}
         scores=[distinct_n_sentence_level(s, n) for s in hypothesis]
         
