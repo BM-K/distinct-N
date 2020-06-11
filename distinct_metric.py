@@ -23,7 +23,6 @@ if __name__ == '__main__':
     
     print(hypothesis)
     
-    output_dir = Path(args.output_dir)
     for n in args.n_range:
         name=NAME
         params={'n': n}
