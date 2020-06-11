@@ -4,6 +4,7 @@ https://github.com/neural-dialogue-metrics/Distinct-N 에러나는 부분 수정
 ## How to use
 ```ruby
 git clone https://github.com/BM-K/distinct-N.git
+cd distinct-N
 python3 distinct_metric.py testdata/bigram.txt -n 2
 ```
 -n = Distinct N
